@@ -11,6 +11,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ContactoController;
 use App\Http\Controllers\PasswordResetController;
 use App\Http\Controllers\CategoriaController;
+use App\Http\Controllers\ProductApiController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\StripeController;
 
@@ -130,6 +131,7 @@ Route::post('password/reset', [PasswordResetController::class, 'reset'])->name('
 
 // Route::get('clientes/create', [ClienteController::class, 'create'])->name('clientes.create');
 
+Route::get('/productos', [ProductApiController::class, 'productApi']);
 
 
 
